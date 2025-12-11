@@ -66,6 +66,8 @@ def button_action(canvas, player: object, dict_pieces: dict, move_direction: str
 
 
 # MAIN -------------------------------------------------------------------------------------------------------
+
+# Verification mode
 window = tk.Tk()
 
 # Definition des images Buttons

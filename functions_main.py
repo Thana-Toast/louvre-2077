@@ -2,6 +2,9 @@ import csv
 import random
 import string
 from datetime import datetime, timedelta
+# PARAMETRAGE --------------------------------------------
+TEST_MODE = True
+# --------------------------------------------------------
 
 PROXIMITY_LIMIT = 100
 STEP = 30
@@ -136,11 +139,13 @@ def controle_heure_ouverture() -> bool:
     """
     Vérifie si l'heure actuelle est comprise entre les bornes spécifiées en constantes
     """
-    heure_actuelle = datetime.now().time()
-
-    if HEURE_DEBUT_UNIQUE <= heure_actuelle <= HEURE_FIN_UNIQUE:
+    if TEST_MODE:
         return True
-    return False
+    else:
+        heure_actuelle = datetime.now().time()
+        if HEURE_DEBUT_UNIQUE <= heure_actuelle <= HEURE_FIN_UNIQUE:
+            return True
+        return False
 
 
 def calculer_delta_sec(debut: object, fin: object) -> int:
