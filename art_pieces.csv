@@ -1,0 +1,5 @@
+id,x,y,price_per_sec,pic_file,active_pic_file
+La Joconde,100,400,0.25,joconde.png,joconde_active.png
+Venus de Milo,350,150,0.10,venus.png,venus_active.png
+liberte guidant le peuple,400,400,0.10,liberte.png,liberte_active.png
+masque de ramses,400,360,0.20,ramses.png,ramses_active.png
