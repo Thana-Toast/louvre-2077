@@ -3,7 +3,7 @@ import random
 import string
 from datetime import datetime, timedelta
 # PARAMETRAGE --------------------------------------------
-TEST_MODE = True
+TEST_MODE = True # if true, the programm will always act as if museum is open
 # --------------------------------------------------------
 
 PROXIMITY_LIMIT = 100
